@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools">
     <!-- Quyền cho phép ứng dụng sử dụng Wake Lock (để giữ màn hình sáng) -->
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
-
     <!-- Required only if your app needs to access images or photos
      that other apps created. -->
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />

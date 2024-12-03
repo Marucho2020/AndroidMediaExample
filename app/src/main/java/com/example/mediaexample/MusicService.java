@@ -36,8 +36,6 @@ public class MusicService extends Service implements
     private boolean shuffle = false;
     private Random rand;
 
-
-
     @Nullable
     @Override
     public IBinder onBind(Intent intent) {
@@ -48,8 +46,11 @@ public class MusicService extends Service implements
     public void onCreate() {
         super.onCreate();
         songPos = 0;
+        rand = new Random();
+
         //khởi tạo một bộ phát đa phương tiện mới
         player = new MediaPlayer();
+        initMusicPlayer();
     }
     public void initMusicPlayer() {
         player.setWakeMode(getApplicationContext() , PowerManager.PARTIAL_WAKE_LOCK);

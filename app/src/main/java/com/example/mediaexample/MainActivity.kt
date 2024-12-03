@@ -39,7 +39,6 @@ class MainActivity : AppCompatActivity(),MediaController.MediaPlayerControl  {
     private  var controller : MusicController? = null ;
     private var paused : Boolean = false;
     private var playbackPaused : Boolean = false;
-    private lateinit var requestPermissionLauncher: ActivityResultLauncher<Intent>
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
