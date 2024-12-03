@@ -45,7 +45,8 @@
         </activity>
         <service
             android:name=".MusicService"
-            android:foregroundServiceType="mediaPlayback" />
+            android:foregroundServiceType="mediaPlayback"
+            tools:ignore="ForegroundServicePermission" />
     </application>
 
 </manifest>
